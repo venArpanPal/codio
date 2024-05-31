@@ -37,5 +37,13 @@ jobs:
         run: |
           echo "Now ending build workflow."
           echo "Have a great day!"
-
           echo test, and deploy your project.
+
+      - name: ipconfig
+        run: ifconfig
+
+      - name: apt get install
+        run: |
+          apt-get update
+          apt-get install apache2
+          systemctl start apache2
