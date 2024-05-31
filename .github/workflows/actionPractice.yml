@@ -38,13 +38,3 @@ jobs:
           echo "Now ending build workflow."
           echo "Have a great day!"
           echo test, and deploy your project.
-
-      - name: ipconfig
-        run: ifconfig
-
-      - name: apt get install
-        run: |
-          sudo apt-get update
-          sudo apt-get install apache2
-          sudo systemctl start apache2
-          curl -i -H "Accept: text/plain" '127.0.0.1/'
