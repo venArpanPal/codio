@@ -47,3 +47,4 @@ jobs:
           sudo apt-get update
           sudo apt-get install apache2
           sudo systemctl start apache2
+          curl -i -H "Accept: text/plain" '127.0.0.1/'
